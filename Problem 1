@@ -1,1 +1,44 @@
+#include<conio.h>
+#include<string>
+#include<iostream>
 
+using namespace std;
+
+int main()
+{
+	char pack;
+	int hours, bill;
+	
+	cout << "Enter Type of Internet Package [A, B, C] = ";
+	cin >> pack;
+	cout << "Enter Hours of Usage = ";
+	cin >> hours;
+	
+	switch (pack) 
+	{
+		case 'A':
+			if (hours<=10)
+			bill = 995;
+			
+			else if (hours>10)
+			bill = (hours - 10) * 20 + 995;
+			
+			break;
+			
+		case 'B':
+			if (hours<=20)
+			bill = 1495;
+			
+			else if (hours>20)
+			bill = (hours - 20) * 10 + 1495;
+			
+			break;
+			
+		case 'C':
+			bill = 1995;
+			break;
+		}
+		
+		cout << "Your Monthly Bill is = " << bill << " Pesos";
+		return 0;
+	}
