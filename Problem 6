@@ -11,10 +11,12 @@ int main()
     
     for (int x = 0; x < 20; x++)
     {
-    	cout << num1 << ", " << endl;
+    	cout << num1 << ", ";
     	num = num1 + num2;
     	num1 = num2;
     	num2 = num;
 	}
+	
 return 0;
 }
+    
